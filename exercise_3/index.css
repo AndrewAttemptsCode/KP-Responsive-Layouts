@@ -23,33 +23,33 @@ body {
 
 .content-text {
   width: 50%;
+}
 
-  h1 {
+.content-text h1 {
   font-size: 3rem;
   font-weight: 900;
   margin: 0 0 1.25rem;
-  }
+}
 
-  p {
-    font-size: 1.3rem;
-    font-weight: 400;
-    margin: 0 0 3rem;
-  }
+.content-text p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 0 0 3rem;
+}
 
-  a {
-    display: inline-block;
-    text-decoration: none;
-    color: #23424a;
-    background-color: #38CFD9;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 0.7em 1.6em;
-    border-radius: 5rem;
-    white-space: nowrap;
-  }
+.content-text a {
+  display: inline-block;
+  text-decoration: none;
+  color: #23424a;
+  background-color: #38CFD9;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.7em 1.6em;
+  border-radius: 5rem;
+  white-space: nowrap;
+}
 
-  a:focus,
-  a:hover {
-    opacity: 0.75;
-  }
+.content-text a:focus,
+.content-text a:hover {
+  opacity: 0.75;
 }
