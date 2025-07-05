@@ -21,24 +21,21 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.intro-section {
+  background: #23424a;
+  color: white;
+  padding: 3.125rem 0;
 }
 
 .container {
-  background: #23424a;
-  color: white;
-  padding: 50px 0;
-}
-
-.intro-container {
-  max-width: 50%;
+  width: 80%;
+  max-width: 50rem;
   margin: 0 auto;
 }
 
 .intro-content {
-  max-width: 50%;
-}
-
-.content-container {
-  margin: 0 auto;
   max-width: 50%;
 }
