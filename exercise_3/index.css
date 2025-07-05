@@ -12,35 +12,44 @@ body {
 .container {
   background: #23424a;
   color: white;
-  padding: 6.25rem 4.35rem;
+  padding: 6.25rem 0;
 }
 
 .content {
-  max-width: 50%;
+  width: 80%;
+  max-width: 85rem;
+  margin: 0 auto;
 }
 
-#content-header {
+.content-text {
+  width: 50%;
+
+  h1 {
   font-size: 3rem;
   font-weight: 900;
-  margin: 0;
+  margin: 0 0 1.25rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0 0 3rem;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: #23424a;
+    background-color: #38CFD9;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.7em 1.6em;
+    border-radius: 5rem;
+    white-space: nowrap;
+  }
+
+  a:focus,
+  a:hover {
+    opacity: 0.75;
+  }
 }
-
-#content-body {
-  font-size: 1.3rem;
-  font-weight: 400;
-  margin-top: 1.25rem;
-  margin-bottom: 4.4rem;
-}
-
-#content-link {
-  text-decoration: none;
-  color: #23424a;
-  background-color: #38CFD9;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 0.7em 1.6em;
-  border-radius: 5rem;
-  white-space: nowrap;
-}
-
-
