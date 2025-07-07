@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.hero {
+  background: #F3EED9;
+  min-height: 660px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.hero-text h1 {
+  font-size: 1.125rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: #222C2A;
+}
+
+.hero-text h2 {
+  font-size: 3.75rem;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+  line-height: 1;
+  color: #824936;
+  margin: 0;
+}
+
+.designs,
+.product {
+  padding: 5rem 0;
+}
+
+.designs h3 {
+  text-align: center;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+  font-size: 2.25rem;
+  color: #824936;
+}
+
+.designs p {
+  color: #222C2A;
+}
+
+.designs-item,
+.product-text,
+.product-img {
+  width: 46%;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-first {
+  background: #222C2A;
+}
+
+.product-second {
+  background: #824936;
+}
+
+.product-text h3 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+  font-size: 2.25rem;
+  color: #F3EED9;
+  margin-top: 0;
+}
+
+.product-text p {
+  color: white;
+}
