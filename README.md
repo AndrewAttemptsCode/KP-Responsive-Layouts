@@ -38,6 +38,11 @@ https://courses.kevinpowell.co/view/courses/conquering-responsive-layouts
 |
 [Source Code](https://github.com/AndrewAttemptsCode/KP-Responsive-Layouts/tree/main/flexbox/exercise_3)
 
+**Exercise 3.5**
+[Live View](https://andrewattemptscode.github.io/KP-Responsive-Layouts/flexbox/exercise_3.5)
+|
+[Source Code](https://github.com/AndrewAttemptsCode/KP-Responsive-Layouts/tree/main/flexbox/exercise_3.5)
+
 **Exercise 4**
 [Live View](https://andrewattemptscode.github.io/KP-Responsive-Layouts/flexbox/exercise_4)
 |

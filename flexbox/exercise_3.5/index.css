@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.hero {
+  background: #23424A;
+  color: white;
+  padding: 6.25rem 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  width: 62%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0 0 1.25rem;
+}
+
+.hero-text p {
+  font-weight: 400;
+  margin: 0 0 3rem;
+}
+
+.hero-text a {
+  display: inline-block;
+  text-decoration: none;
+  color: #23424a;
+  background-color: #38CFD9;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.7em 1.6em;
+  border-radius: 5rem;
+  white-space: nowrap;
+}
+
+.hero-text a:focus,
+.hero-text a:hover {
+  opacity: 0.75;
+}
+
+.hero-img {
+  width: 32%;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  padding: 3rem 0;
+}
+
+.primary-content {
+  width: 62%;
+}
+
+.primary-content h2 {
+  font-size: 2.25rem;
+  color: #136C72;
+}
+
+.sidebar {
+  width: 32%;
+  padding: 1.5rem;
+  background: #136C72;
+  color: white;
+  text-align: center;
+}
+
+.header {
+  background: #136C72;
+  padding: 1rem 0;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-link-button {
+  color: #136C72;
+  background: white;
+  border-radius: 5rem;
+  padding: 0.25rem 1rem;
+}
+
+.nav-link-button:hover {
+  opacity: 0.75;
+}
+
+@media (max-width: 600px) {
+  .flex-row {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .hero-text,
+  .hero-img,
+  .primary-content,
+  .sidebar {
+    width: 100%;
+  }
+
+  .hero {
+    padding: 3rem 0;
+  }
+
+  .primary-content h2,
+  .hero-text h1 {
+    margin-top: 0;
+    text-align: center;
+  }
+}
