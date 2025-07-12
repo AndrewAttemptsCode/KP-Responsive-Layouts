@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: min(80%, 1200px);
+  margin: 0 auto;
+  position: relative;
+}
+
+.header {
+  background-color: #2E323F;
+  padding: 1rem 0;
+}
+
+.logo {
+  height: 100%;
+}
+
+.logo img {
+  margin: 0 auto;
+}
+
+.nav {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.0.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  min-width: 320px;
+  background-color: rgb(46, 50, 63);
+  box-shadow: 0 0 10px 5px rgba(46, 50, 63, 0.5);
+  visibility: hidden;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-list {
+  list-style-type: none;
+  text-transform: uppercase;
+  margin: 3rem 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-item {
+  padding: 1rem 0;
+}
+
+.nav-item:hover {
+  opacity: 0.8;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.close-menu-button {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.8rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(46, 50, 63);
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.close-menu-content {
+  font-size: 1rem;
+  user-select: none;
+}
+
+.open-menu-button {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.open-menu-content,
+.open-menu-button::before,
+.open-menu-button::after {
+  content: "";
+  display: block;
+  height: 2px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #3B4050;
+  border: none;
+  user-select: none;
+}
+
+.open-menu-button::before {
+  transform: translateY(-3px);
+}
+
+.open-menu-button::after {
+  transform: translateY(3px);
+}
+
+.secondary-nav li:last-child .nav-link {
+  background-color: #A59678;
+  border-radius: 4rem;
+  border: none;
+  padding: 0.4rem 0.75rem;
+}
+
+.toggle-menu {
+  visibility: visible;
+  transform: scaleX(100%);
+}
+
+@media (min-width: 700px) {
+  .nav {
+    visibility: visible;
+    transform: none;
+    transition: none;
+    position: static;
+    min-height: auto;
+    min-width: auto;
+    background-color: transparent;
+    box-shadow: none;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .open-menu-button,
+  .close-menu-button {
+    display: none;
+    visibility: hidden;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+  }
+
+  .nav-item {
+    padding: 0;
+  }
+
+  .flex-row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
