@@ -456,11 +456,16 @@ h1, h2, h3 {
   }
 
   .footer-info-columns {
-    gap: 1rem;
+    justify-content: flex-end;
+    gap: 4rem;
     flex: 2;
   }
 
   .footer h2 {
     margin-bottom: 3rem;
+  }
+
+  .footer-info-columns .footer-info-item {
+    flex: none;
   }
 }
