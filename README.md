@@ -57,3 +57,8 @@ https://courses.kevinpowell.co/view/courses/conquering-responsive-layouts
 [Live View](https://andrewattemptscode.github.io/KP-Responsive-Layouts/flexbox/exercise_5)
 |
 [Source Code](https://github.com/AndrewAttemptsCode/KP-Responsive-Layouts/tree/main/flexbox/exercise_5)
+
+**Exercise 6**
+[Live View](https://andrewattemptscode.github.io/KP-Responsive-Layouts/flexbox/exercise_6)
+|
+[Source Code](https://github.com/AndrewAttemptsCode/KP-Responsive-Layouts/tree/main/flexbox/exercise_6)
