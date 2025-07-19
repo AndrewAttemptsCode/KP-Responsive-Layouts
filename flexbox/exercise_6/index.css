@@ -1,3 +1,8 @@
+:root {
+  --ff-headings: "Oswald", "Arial Narrow", sans-serif;
+  --ff-body: "Montserrat", system-ui, sans-serif;
+}
+
 *,
 *::before,
 *::after {
@@ -10,7 +15,7 @@
 
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--ff-body);
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -38,15 +43,19 @@ h1, h2, h3 {
 }
 
 .logo {
-  height: 100%;
+  aspect-ratio: 11 / 6;
+  margin: 0 auto;
+  width: max-content;
 }
 
 .logo img {
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .nav {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--ff-headings);
   font-size: 1.125rem;
   font-weight: 700;
   letter-spacing: 0.0.5rem;
@@ -166,11 +175,15 @@ h1, h2, h3 {
 }
 
 .hero-header {
-  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: clamp(1.4rem, 0.4545rem + 4.7273vw, 4rem);
   text-align: center;
   line-height: 1.1;
+}
+
+.hero-header h1,
+.hero-header span {
+  font-family: var(--ff-headings);
 }
 
 .hero-header span {
@@ -182,7 +195,7 @@ h1, h2, h3 {
 }
 
 .hero-button {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--ff-headings);
   font-weight: 700;
   font-size: clamp(1rem, 0.8182rem + 0.9091vw, 1.5rem);
   color: #FFFFFF;
@@ -206,7 +219,7 @@ h1, h2, h3 {
 }
 
 .features-item h2 {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--ff-headings);
   font-size: clamp(1.5rem, 1.375rem + 0.625vw, 1.875rem);
   font-weight: 700;
   color: #A59678;
@@ -224,13 +237,23 @@ h1, h2, h3 {
 
 .breakdown-item h2 {
   color: #A59678;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--ff-headings);
   font-weight: 700;
   font-size: clamp(1.375rem, 1.0833rem + 1.4583vw, 2.25rem);
 }
 
 .breakdown-item p {
   font-size: clamp(1rem, 0.9583rem + 0.2083vw, 1.125rem);
+}
+
+.img-container {
+  aspect-ratio: 3 / 2;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .values-item {
@@ -242,7 +265,7 @@ h1, h2, h3 {
 }
 
 .values-item h3 {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--ff-headings);
   font-weight: 700;
 }
 
@@ -259,7 +282,7 @@ h1, h2, h3 {
 }
 
 .footer h2 {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--ff-headings);
   font-weight: 700;
   font-size: clamp(1.375rem, 0.7841rem + 2.9545vw, 3rem);
   color: #FFFFFF;
@@ -308,7 +331,7 @@ h1, h2, h3 {
 }
 
 .footer-info-item h3 {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--ff-headings);
   font-weight: 700;
   font-size: clamp(1.25rem, 1.1591rem + 0.4545vw, 1.5rem);
   color: #A59678;
